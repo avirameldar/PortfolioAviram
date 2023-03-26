@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="siteMovies.css" />
+  <title>Site siteMovies</title>
+</head>
+
+<body>
+  <header class="header">
+    <h1>Welcome to the Search Movies</h1>
+  </header>
+
+  <section class="sorting-and-filtering">
+    <div id="sortMovies"> Sort By:
+      <select name="sortBy" id="sortBySelect" class="select">
+        <option value="category">category</option>
+        <option value="length">length</option>
+        <option value="name">name</option>
+        <option value="priceLow2High">price (high to low)</option>
+        <option value="PriceHigh2Low">price (low to high)</option>
+      </select>
+    </div>
+
+    <div id="filterContainer">
+      Choose Category:
+      <select name="category" id="categoryFilter" class="select">
+        <option value="comedy">comedy</option>
+        <option value="drama">drama</option>
+        <option value="horror">horror</option>
+      </select>
+    </div>
+  </section>
+
+  <section>
+    <h2>Sort By Length:</h2>
+    <br>
+    <div class="length-sorting">
+      <div>
+        <label for="fromLen">From Length:</label><br>
+        <input type="number" id="fromLen" class="select"><br>
+      </div>
+      <div>
+        <label for="toLen"></label>To Length:</label><br>
+        <input type="number" id="toLen" class="select"><br>
+      </div>
+      <div class="filter-btn">
+        <input type="button" value="filter by len" id="filterLenBtn" class="btn">
+      </div>
+    </div>
+  </section>
+  <br>
+  <section>
+    <div id="searchContainer">
+      <input type="text" id="searchInput" placeholder="Search Movie" class="search"></input>
+    </div>
+
+    <div id="moviesContainer" class="moviesContainer"></div>
+
+    <div id="formContainer" style="display: none;">
+      <form id="addForm">
+        <label for="movieName">Movie name:</label><br>
+        <input type="text" id="movieName"><br><br>
+        <label for="movieLength">Movie length:</label><br>
+        <input type="text" id="movieLength"><br><br>
+        <label for="category">Category:</label><br>
+        <select name="category" id="category">
+          <option value="comedy">comedy</option>
+          <option value="drama">drama</option>
+          <option value="horror">horror</option>
+        </select> <br> <br>
+        <label for="moviePrice">Movie price:</label><br>
+        <input type="text" id="moviePrice"><br><br>
+        <input type="button" value="Submit" id="formBtn">
+      </form>
+    </div>
+  </section>
+
+  <script src="siteMovies.js"></script>
+</body>
+
+</html>

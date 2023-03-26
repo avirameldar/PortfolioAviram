@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flight Site</title>
+  <link rel="stylesheet" href="flightSite.css">
+</head>
+
+<body>
+
+  <main class="container">
+    <header>
+      <h1>Flight Site</h1>
+    </header>
+
+    <section id="getCity">
+      <input type="text" id="cityName" class="cityName" placeholder="Enter City Name">
+      <button id="searchAirPort" class="airPorts">Show me the Airports</button>
+    </section>
+
+    <div id="getData" class="getData"></div>
+
+    <section id="flightDetails">
+
+      <input type="text" class="departure" id="departure" placeholder=" AIRPORT DEPARTURE">
+
+      <input type="text" class="arrival" id="arrival" placeholder=" AIRPORT ARRIVAL">
+
+    </section>
+    <section id="typeAndDate">
+      <select class="flightType" id="flightType">
+        <option value="roundTrip">Round trip</option>
+        <option value="oneWay">One way</option>
+      </select>
+      <input class="theDate" type="date" id="flightDate">
+    </section>
+    <div id="btn">
+      <button class="findBtn" id="flightDetailsBtn">Find My Flight</button>
+      <div id="displayDataFlight"></div>
+    </div>
+
+  </main>
+
+  <script src="flightSite.js"></script>
+
+
+</body>
+
+</html>

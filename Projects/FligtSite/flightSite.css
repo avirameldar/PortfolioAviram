@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3.3rem;
+  text-align: center;
+  margin-top: 1.2rem;
+  color: rgba(7, 64, 168, 0.802);
+}
+
+#getCity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.cityName {
+  height: 40px;
+  width: 200px;
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.airPorts {
+  margin-left: 10px;
+  padding: 10px;
+  color: #eee;
+  font-size: 1rem;
+  background-color: #3363e7;
+  border-radius: 10px;
+
+}
+
+.getData {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 55px;
+  font-family: Arial;
+}
+
+#flightDetails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px;
+}
+
+.departure {
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+.arrival {
+  margin-left: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+#typeAndDate {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flightType {
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+.theDate {
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  font-family: Arial;
+  border-radius: 10px;
+}
+
+#btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.findBtn {
+  padding: 10px;
+  color: #eee;
+  font-size: 1.2rem;
+  background-color: #cd7811;
+  border-radius: 10px;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #639;
+  margin: 15px;
+}

@@ -1,0 +1,32 @@
+img {
+  width: 800px;
+}
+
+.active {
+  color: red !important;
+}
+
+body {
+  background-color: rgb(39, 39, 39);
+  color: #fff;
+}
+
+.navbar-brand {
+  margin-left: 788px;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.description {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 800px;
+}
+
+.bord {
+  margin-top: 20px;
+  border-radius: 15px;
+}

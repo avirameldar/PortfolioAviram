@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Assistant', sans-serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: .2s linear;
+}
+
+body {
+  background-color: #E2EBF3;
+}
+
+/* Name and Small pic */
+.top {
+  margin: 0.8rem;
+  margin-right: 15rem;
+  display: flex;
+  gap: 10px;
+  direction: rtl;
+}
+
+.image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+}
+
+.name {
+  margin: 5px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #000;
+}
+
+/* Main picture- with title */
+
+.pic-title {
+  width: 99vw;
+  height: 60vh;
+}
+
+.tech {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 1700px;
+  height: 50px;
+  gap: 30px;
+}
+
+/* The projects */
+.container {
+  background: linear-gradient(45deg, rgb(197, 215, 255), rgb(231, 231, 231));
+  padding: 60px 10%;
+  padding-bottom: 100px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 25px;
+}
+
+.item-container {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, .2);
+  border-radius: 8px;
+  background: #dfdfdf;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.project-image {
+  width: 320px;
+  height: 220px;
+  border-radius: 5px;
+}
+
+.project-title {
+  color: rgb(23, 23, 23);
+  font-size: 22px;
+  padding: 10px 0;
+}
+
+.project-paragraph {
+  color: rgb(25, 25, 25);
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.button {
+  border-radius: 20px;
+  background-color: #119da4;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+
+.button:hover {
+  background-color: #15aab1;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00ab';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-left: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  left: 0;
+}
+
+/* Form */
+
+.btn {
+  border-radius: 20px;
+  background-color: #119da4;
+  border: none;
+  margin: 25px;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 20px;
+  color: #f8f8f8;
+  background-color: #119da4;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  background-color: #1bc7d0;
+}
+
+.btn:hover {
+  background-color: #1bc7d0;
+}
+
+.contact {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)),
+    url('../images/bg.png');
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+  width: 99.1vw;
+  color: #d6d6d6;
+  direction: rtl;
+}
+
+.contact:after {
+  content: '';
+}
+
+.title {
+  margin-right: 70px;
+}
+
+.theForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.input-group {
+  margin: 15px;
+}
+
+.input-message {
+  margin-top: 50px;
+}
+
+/* * */
+input,
+textarea {
+
+  width: 100%;
+  padding: 10px;
+  outline: 0;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  background: transparent;
+  font-size: 15px;
+}
+
+.error {
+  color: #ffc005;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-right: 8px;
+}
+
+.asterisk {
+  color: #ffd105;
+}
+
+label {
+  height: 100%;
+  padding: 5px;
+  color: #fff;
+  cursor: text;
+  transition: 0.2s;
+}
+
+.submit-btn {
+  padding: 7px 15px;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  outline: none;
+  background: rgb(255, 255, 255, 0.3);
+  border: 1px solid #fff;
+  border-radius: 10px;
+  width: 20%;
+  cursor: pointer;
+  margin-right: 14px;
+}
+
+.submit-btn:hover {
+  background: rgb(255, 255, 255, 0.5);
+}
+
+.contact .theForm .input-group {
+  position: relative;
+}
+
+.contact .theForm .input-group input {
+  padding-right: 30px;
+}
+
+.contact .theForm .input-group textarea {
+  padding-right: 35px;
+}
+
+/* *עיצוב הטופס */
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.row .input-group {
+  flex-basis: 48%;
+}
+
+.contact .theForm .input-group i {
+  position: absolute;
+  top: 35px;
+  right: 10px;
+}
+
+hr {
+  color: #eee;
+  border: none;
+  height: 1px;
+}
+
+.footer {
+  background-color: rgb(26, 38, 43);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  height: 140px;
+
+}
+
+.item {
+  color: #d6d6d6;
+  text-align: center;
+}
+
+.fa-facebook-f:hover {
+  color: #3b5998;
+
+}
+
+.fa-linkedin-in:hover {
+  color: #0A66C2;
+
+}
+
+.fa-phone:hover {
+  color: #e2980e;
+
+}
+
+.fa-whatsapp:hover {
+  color: #25D366;
+}
+
+.fa-envelope:hover {
+  color: #EA4335;
+}
+
+.icon-text {
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+.alink {
+  text-decoration: none;
+  color: #d6d6d6;
+}
+
+.tail {
+  text-align: center;
+  color: #d6d6d6;
+  background-color: #000;
+  height: 2rem;
+  padding-top: 5px;
+}
